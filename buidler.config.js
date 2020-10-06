@@ -14,6 +14,7 @@ module.exports = {
   defaultNetwork: "ganache",
   networks: {
     ganache: {
+      timeout: 120000,
       // Standard config
       url: "http://localhost:8545",
       fork: `https://mainnet.infura.io/v3/${INFURA_ID}`,
@@ -28,9 +29,12 @@ module.exports = {
       ConnectGelato: "0x37A7009d424951dd5D5F155fA588D9a03C455163",
       ConnectMaker: "0xac02030d8a8F49eD04b2f52C394D3F901A10F8A9",
       ConnectCompound: "0x07F81230d73a78f63F0c2A3403AD281b067d28F8",
+      ConnectInstaPool: "0xCeF5f3c402d4fef76A038e89a4357176963e1464",
       DAI: "0x6b175474e89094c44da98b954eedeac495271d0f",
       DAI_UNISWAP: "0x2a1530C4C41db0B0b2bB646CB5Eb1A67b7158667",
       CDAI: "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+      DssCdpManager: "0x5ef30b9986345249bc32d8928B7ee64DE9435E39",
+      GetCdps: "0x36a724Bd100c39f0Ea4D3A20F7097eE01A8Ff573",
       ProviderModuleDSA: "0x0C25452d20cdFeEd2983fa9b9b9Cf4E81D6f2fE2",
     },
   },
